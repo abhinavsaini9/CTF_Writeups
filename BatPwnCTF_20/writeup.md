@@ -1,1 +1,5 @@
-Writeup
+# CRfuckPhuck
+
+![](/CRfuckPhuck/CRfuckPhuck.jpg)
+
+
