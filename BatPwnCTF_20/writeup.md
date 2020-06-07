@@ -1,5 +1,0 @@
-# CRfuckPhuck
-
-![](/CRfuckPhuck/CRfuckPhuck.jpg)
-
-
