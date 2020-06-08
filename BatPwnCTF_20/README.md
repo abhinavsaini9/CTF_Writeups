@@ -30,7 +30,7 @@ After fiddling for some time I found that after using stegosolve tool on these i
 
 After some researching I found it was a part of Alphuck Esolang programming language [Alphuck](https://esolangs.org/wiki/Alphuck) (!Hint in Description regarding Alphucking Language). Therefore we had to arrange the image in the order of no. in them and then using the combined text after extracting red plane of images we will get an Alphuck Code.
 
-To correctly order the images according to the number in them I wrote a scipt [OCR](./CRfuckPhuck/output/ocr.py). 
+Correctly order the images according to the number in them using scipt [OCR](./CRfuckPhuck/output/ocr.py). 
 
 ```python
 
