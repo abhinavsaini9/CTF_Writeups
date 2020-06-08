@@ -32,13 +32,12 @@ After some researching I found it was a part of Alphuck Esolang programming lang
 
 To correctly order the images according to the number in them I wrote a scipt [OCR](./CRfuckPhuck/output/ocr.py). 
 
-'''python
+```python
 
 import os
 import pytesseract
 from PIL import Image
 chunks = os.listdir()
-#flag = ""
 order = []
 for i in chunks:
     if i == 'ocr.py':
@@ -50,13 +49,23 @@ for i in chunks:
 
 print(sorted(order,key = lambda i: i['number']))
 
-'''
+```
 
 Code [lsbred](./CRfuckPhuck/lsbred.py) to automate extraction of red plane of each file in correct order.
 
 ![Red](./CRfuckPhuck/alphuck.jpg)
 
-Using another OCR script to extract the whole program.
+Combine all the text to form the Alphuck program you can automate it using OCR but for now I just joined it manually.
+	`eeeeeeeeeepaeaeeeaeeeeeeeaeeeeeeeeeeccccisaaaaiijijeeeeeeeeeeeeeeeeeeejiiiijeeeeeeejiiiiiiiiijeeeeeeeeeeeeejceeeeeeeeejceeeeeeeeeeeeeeeeeeeeejaeeejeeeeeeeeeeeeejiiiiiiiiiiiiiiijaiiiiiiiiiiiiiiiiiiijeeeeeeeeeeeeejccjaiiiiijaeeeeeeeej`
+
+Decoded it using [Alphuck](https://www.dcode.fr/alphuck-language).
+
+And the flag is 
+
+`batpwn{O3R_Phu3K}`
+
+
+
 
 
 

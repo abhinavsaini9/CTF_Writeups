@@ -2,7 +2,6 @@ import os
 import pytesseract
 from PIL import Image
 chunks = os.listdir()
-#flag = ""
 order = []
 for i in chunks:
     if i == 'ocr.py':
