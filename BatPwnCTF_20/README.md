@@ -24,14 +24,40 @@ which had the password "B@TN00t@Fl@g" for the zip file.
 After extracting and unzipping flag.zip we get a folder named flagchunks having 116 png images numbered from 0. 
 ![chunks](./CRfuckPhuck/chunks.jpg)
 
-After fiddling for some time I found that after using stegosolve tool on these images there is some text in their LSB xor. 
+After fiddling for some time I found that after using stegosolve tool on these images there is some text in their Red Plane. 
 
-![xor](./CRfuckPhuck/44.png)
+![red](./CRfuckPhuck/44.png)
 
-After some researching I found it was a part of Alphuck Esolang programming language (!Hint in Description regarding Alphucking Language). Therefore we had to arrange the image in the order of no. in them and then using the combined text after Xor LSB of images we will get an Alphuck Code.
+After some researching I found it was a part of Alphuck Esolang programming language (!Hint in Description regarding Alphucking Language). Therefore we had to arrange the image in the order of no. in them and then using the combined text after extracting red plane of images we will get an Alphuck Code.
 
-Code [lsbxor](./CRfuckPhuck/lsbxor.py) to automate xor of each files
+To correctly order the images according to the number in them I wrote a scipt [OCR](./CRfuckPhuck/output/ocr.py). 
 
-![Xor](./CRfuckPhuck/lsbxor.py)
+'''python
 
-To correctly order the images according to the number in them. 
+import os
+import pytesseract
+from PIL import Image
+chunks = os.listdir()
+#flag = ""
+order = []
+for i in chunks:
+    if i == 'ocr.py':
+        continue
+    else:
+        text = pytesseract.image_to_string(Image.open(i),config = '--psm 10 --oem 3 -c tessedit_char_whitelist=0123456789' , lang = 'eng')
+        obj = {'iname':i,'number':int(text)}
+        order.append(obj)
+
+print(sorted(order,key = lambda i: i['number']))
+
+'''
+
+Code [lsbred](./CRfuckPhuck/lsbred.py) to automate extraction of red plane of each file in correct order.
+
+![Red](./CRfuckPhuck/alphuck.jpg)
+
+Using another OCR script to extract the whole program.
+
+
+
+ 
