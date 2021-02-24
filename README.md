@@ -1,2 +1,2 @@
 # CTF_Writeups
-Writeups of Nice CTF Challenges 
+Writeups of CTF Challenges 
