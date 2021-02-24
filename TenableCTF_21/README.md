@@ -39,13 +39,14 @@ cd ..
 
 ```
 
-The password for all the files was 0/1, I could have run just 0/1 on zips but wasn't sure at first so jtr, So I concated all the password in hope to get a binary.
+The password for all the files was 0/1, I could have run just 0/1 on zips but wasn't sure at first so jtr, So I concatenated all the password in hope to get a binary.
 
 `00111101110010010000011011110110100100101000111011101000100000101100110010110001101110001011110111010001010010101010001001001100`
 
-And we got a png [Key](./A3S_turtles/key.png). So guessing from the challenge name it is pretty obvious it is AES128 Encryption.
+And we got a png [Key](./A3S_turtles/key.png). So guessing from the challenge name it is pretty obvious it is AES Encryption and 128 bit key from zip filename.
 
 Cipher text Hex `3DC906F6928EE882CCB1B8BDD14AA24C`.
+
 
 Using [CyberChef](https://gchq.github.io/CyberChef/) and the key in ECB mode, decodes Raw text.
 
