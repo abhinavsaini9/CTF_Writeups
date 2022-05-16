@@ -129,7 +129,7 @@ zionctf{ju5t_7he_r3gul4r_x0r_s7uff_yeetyeet}
 
 <hr>
 
-## Web - 1
+## Web-1
 
 **Challenge**
 
@@ -163,7 +163,7 @@ zionctf{av01d_th1nk1n8_7o0_mucH}
 
 <hr>
 
-## Web - 2
+## Web-2
 
 **Challenge**
 
@@ -207,7 +207,7 @@ zionctf{chr0m3_chr0m3_chr0m3_I_d0n7_lik3_a4gl0md1_I_c4n7_av0id}
 
 <hr>
 
-## Web - 3
+## Web-3
 
 **Challenge**
 
@@ -250,7 +250,7 @@ zionctf{uh_0h_y0u_f0und_th3_DB!_55ak9prmnQY1w}
 
 <hr>
 
-## Steg - 1
+## Steg-1
 
 **Challenge**
 
@@ -283,7 +283,7 @@ zionctf{Wh1t3_spac3s_are_s0_fun_hsa7815gij}
 
 <hr>
 
-## Steg - 2
+## Steg-2
 
 **Challenge**
 
